@@ -77,11 +77,11 @@ def main():
     combined = trimesh.util.concatenate(boxes)
     
     # 결과를 OBJ 파일로 저장
-    combined.export("buildings_boxes.obj")
+    combined.export("outputs/buildings_boxes.obj")
     print("buildings_boxes.obj 파일로 저장됨")
 
     # OBJ 파일 불러오기
-    mesh = trimesh.load('buildings_boxes.obj')
+    mesh = trimesh.load('outputs/buildings_boxes.obj')
     # 내장 뷰어로 시각화 (창이 뜨면서 3D 객체를 회전/확대할 수 있습니다)
     mesh.show()
 
